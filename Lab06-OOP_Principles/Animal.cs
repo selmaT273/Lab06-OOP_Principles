@@ -1,10 +1,23 @@
 ﻿using System;
 namespace Lab06_OOP_Principles
 {
-    public class Animal
+    public abstract class Animal
     {
-        public Animal()
+        // Properties 
+        public virtual int Legs { get; } = 2;
+        public abstract string Color { get; }
+
+
+
+        // Methods
+        public abstract string Eat();
+
+        public abstract string Move();
+
+        public virtual string Speak()
         {
+            return "screech";
         }
+
     }
 }
