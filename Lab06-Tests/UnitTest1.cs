@@ -86,5 +86,25 @@ namespace Lab06_Tests
             // Assert
             Assert.True(cardinal.Migrate());
         }
+
+        [Fact]
+        public void CrowFeatherReturnsHeavyTest()
+        {
+            // Act
+            Crow crow = new Crow();
+
+            // Assert
+            Assert.Equal("heavy", crow.FeatherType);
+        }
+
+        [Fact]
+        public void CrowSpeakReturnsCawTest()
+        {
+            // Act
+            Crow crow = new Crow();
+
+            // Assert
+            Assert.Equal("caw", crow.Speak());
+        }
     }
 }
