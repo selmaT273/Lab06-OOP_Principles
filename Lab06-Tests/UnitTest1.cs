@@ -106,5 +106,25 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("caw", crow.Speak());
         }
+
+        [Fact]
+        public void PoodleISpeakAlotTest()
+        {
+            // Act
+            ISpeakAlot poodle = new Poodle();
+
+            //Assert
+            Assert.Equal("bark bark bark bark", poodle.SpeaksAlot());
+        }
+
+        [Fact]
+        public void CrowISpeakAlotTest()
+        {
+            // Act
+            ISpeakAlot crow = new Crow();
+
+            //Assert
+            Assert.Equal("caw caw caw caw", crow.SpeaksAlot());
+        }
     }
 }
