@@ -46,5 +46,15 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("energetic", lab.Temperament);
         }
+
+        [Fact]
+        public void OrioleColorReturnsOrangeTest()
+        {
+            // Act
+            Oriole oriole = new Oriole();
+
+            // Assert
+            Assert.Equal("orange", oriole.Color);
+        }
     }
 }
