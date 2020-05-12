@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Lab06_OOP_Principles
 {
-    public class Poodle : Dog, ISpeakAlot
+    public class Poodle : Dog, ISpeakAlot, IEatFresh
     {
         // Inherited Properties
         public override string Color => "black";
@@ -18,6 +18,11 @@ namespace Lab06_OOP_Principles
         public string SpeaksAlot()
         {
             return $"{Speak()} {Speak()} {Speak()} {Speak()}";
+        }
+
+        public string EatsFresh()
+        {
+            return $"I eat {Eat()} and fresh meat";
         }
     }
 }

@@ -1,4 +1,3 @@
-using System;
 using Lab06_OOP_Principles;
 using Xunit;
 
@@ -125,6 +124,26 @@ namespace Lab06_Tests
 
             //Assert
             Assert.Equal("caw caw caw caw", crow.SpeaksAlot());
+        }
+
+        [Fact]
+        public void CrowIsAnAnimalTest()
+        {
+            // Act
+            Animal crow = new Crow();
+
+            // Assert
+            Assert.Equal(2, crow.Legs);
+        }
+
+        [Fact]
+        public void PoodleEatsFreshTest()
+        {
+            // Act
+            IEatFresh poodle = new Poodle();
+
+            // Assert
+            Assert.Equal("I eat kibble and fresh meat", poodle.EatsFresh());
         }
     }
 }
