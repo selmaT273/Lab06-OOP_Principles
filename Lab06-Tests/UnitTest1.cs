@@ -26,5 +26,25 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("bark", poodle.Speak());
         }
+
+        [Fact]
+        public void LabFurReturnsShortHairTest()
+        {
+            // Act
+            Lab lab = new Lab();
+
+            // Assert
+            Assert.Equal("short hair", lab.FurType);
+        }
+
+        [Fact]
+        public void LabTemperamentReturnsEnergeticTest()
+        {
+            // Act
+            Lab lab = new Lab();
+
+            // Assert
+            Assert.Equal("energetic", lab.Temperament);
+        }
     }
 }
