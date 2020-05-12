@@ -4,6 +4,7 @@
 The contents of this lab will plan and build out what animals live in the zoo. It contains a console app that will instantiate animals and prove that they are inheriting traits and features from their parent classes. 
 
 ## UML
+[UML](Lab06-UML.JPG)
 
 ## Object Oriented Programming Principles
 ### Inheritance
