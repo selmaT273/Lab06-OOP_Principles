@@ -66,5 +66,25 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("light", oriole.FeatherType);
         }
+
+        [Fact]
+        public void CardinalColorReturnsRedTest()
+        {
+            // Act
+            Cardinal cardinal = new Cardinal();
+
+            // Assert
+            Assert.Equal("red", cardinal.Color);
+        }
+
+        [Fact]
+        public void CardinalMigrateReturnsTrueTest()
+        {
+            // Act
+            Cardinal cardinal = new Cardinal();
+
+            // Assert
+            Assert.True(cardinal.Migrate());
+        }
     }
 }
