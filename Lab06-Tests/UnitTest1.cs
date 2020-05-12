@@ -7,7 +7,7 @@ namespace Lab06_Tests
     public class UnitTest1
     {
         [Fact]
-        public void Test1()
+        public void PoodleColorReturnsBlackTest()
         {
             // Act
             Poodle poodle = new Poodle();
@@ -15,8 +15,16 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("black", poodle.Color);
 
+        }
 
+        [Fact]
+        public void PoodleSpeakReturnsBarkTest()
+        {
+            //Act
+            Poodle poodle = new Poodle();
 
+            // Assert
+            Assert.Equal("bark", poodle.Speak());
         }
     }
 }
