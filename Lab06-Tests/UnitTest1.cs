@@ -145,5 +145,15 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("I eat kibble and fresh meat", poodle.EatsFresh());
         }
+
+        [Fact]
+        public void OrioleEatsFreshTest()
+        {
+            // Act
+            IEatFresh oriole = new Oriole();
+
+            // Assert
+            Assert.Equal("I eat fresh worms.", oriole.EatsFresh());
+        }
     }
 }
