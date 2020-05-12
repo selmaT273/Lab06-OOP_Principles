@@ -6,7 +6,7 @@ namespace Lab06_OOP_Principles
         // Inherited Properties
         public override string Color => "orange";
 
-        public override string FeatherType => "heavy";
+        public override string FeatherType => "light";
 
 
     }

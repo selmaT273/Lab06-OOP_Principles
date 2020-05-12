@@ -56,5 +56,15 @@ namespace Lab06_Tests
             // Assert
             Assert.Equal("orange", oriole.Color);
         }
+
+        [Fact]
+        public void OrioleFeatherReturnsLightTest()
+        {
+            // Act
+            Oriole oriole = new Oriole();
+
+            // Assert
+            Assert.Equal("light", oriole.FeatherType);
+        }
     }
 }
