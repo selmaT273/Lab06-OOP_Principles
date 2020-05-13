@@ -27,8 +27,8 @@ The contents of this lab will plan and build out what animals live in the zoo. I
 ## Interface Implementation
 - In my project, there are currently 2 interfaces: IEatFresh and ISpeakAlot. 
 ### IEatFresh
-- This interface allows specific concrete animals to eat fresh food if they inherit from the IEatFresh interface.
+- This interface allows specific concrete animals to eat fresh food if they implement the IEatFresh interface.
 ### ISpeakAlot
-- This interface allows some of the concrete animals to SpeakAlot if they inherit from the ISpeakAlot class.
+- This interface allows some of the concrete animals to SpeakAlot if they implement the ISpeakAlot interface.
 
 [Updated Diagram](Lab07-UML.jpg)
