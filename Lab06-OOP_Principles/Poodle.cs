@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Lab06_OOP_Principles
 {
-    public class Poodle : Dog, ISpeakAlot, IEatFresh
+    public class Poodle : Dog, ISpeakAlot, IEatFresh, IBite
     {
         // Inherited Properties
         public override string Color => "black";
@@ -9,6 +9,10 @@ namespace Lab06_OOP_Principles
         public override string FurType => "curly";
 
         public override string Temperament => "calm";
+
+        public string BiteForce { get; set; }
+
+        public string BiteMark { get; set; }
 
         public override string Speak()
         {
@@ -24,5 +28,7 @@ namespace Lab06_OOP_Principles
         {
             return $"I eat {Eat()} and fresh meat";
         }
+
+        public string BiteMark => "tiny teeth";
     }
 }
