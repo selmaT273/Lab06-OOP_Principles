@@ -18,3 +18,17 @@ The contents of this lab will plan and build out what animals live in the zoo. I
 
 ## Encapsulation
 - This is the practice of hiding implementation methods and attributes from the user to a varying degree by way of using access modifiers such as public, private, protected, and internal. 
+
+# Lab 07: Interfaces
+
+## Interface
+- An interface is a way to group types together by sharing the same kind of inheritance among them. It defines a role that an object can play by specifying a thing that an object is able to do. 
+
+## Interface Implementation
+- In my project, there are currently 2 interfaces: IEatFresh and ISpeakAlot. 
+### IEatFresh
+- This interface allows specific concrete animals to eat fresh food if they implement the IEatFresh interface.
+### ISpeakAlot
+- This interface allows some of the concrete animals to SpeakAlot if they implement the ISpeakAlot interface.
+
+[Updated Diagram](Lab07-UML.jpg)

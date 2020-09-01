@@ -1,7 +1,7 @@
 ﻿using System;
 namespace Lab06_OOP_Principles
 {
-    public class Crow : Bird
+    public class Crow : Bird, ISpeakAlot
     {
         // Inherited Properties
         public override string Color => "black";
@@ -13,6 +13,10 @@ namespace Lab06_OOP_Principles
             return "caw";
         }
 
+        public string SpeaksAlot()
+        {
+            return $"{Speak()} {Speak()} {Speak()} {Speak()}";
+        }
 
     }
 }
